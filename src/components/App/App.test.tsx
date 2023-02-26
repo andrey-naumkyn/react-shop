@@ -17,6 +17,8 @@ test("Renders products list", async () => {
       title: "Product 1",
       description: "Product 1 description",
       price: 1,
+      author: "unknown",
+      pages: 345,
       count: 1,
     },
     {
@@ -24,6 +26,8 @@ test("Renders products list", async () => {
       title: "Product 2",
       description: "Product 2 description",
       price: 2,
+      author: "unknown",
+      pages: 345,
       count: 2,
     },
   ];
