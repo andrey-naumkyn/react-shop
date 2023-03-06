@@ -32,7 +32,17 @@ export default function Products() {
               <Typography gutterBottom variant="h5" component="h2">
                 {product.title}
               </Typography>
-              <Typography>{formatAsPrice(product.price)}</Typography>
+              <Typography sx={{ mt: 1 }}>
+                <strong>Author: </strong>
+                {product.author}
+              </Typography>
+              <Typography sx={{ mt: 1 }}>
+                <strong>Pages: </strong>
+                {product.pages}
+              </Typography>
+              <Typography sx={{ mt: 1 }}>
+                {formatAsPrice(product.price)}
+              </Typography>
             </CardContent>
             <CardActions>
               <AddProductToCart product={product} />
